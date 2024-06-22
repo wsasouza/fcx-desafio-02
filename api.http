@@ -1,0 +1,17 @@
+
+### List events
+GET http://localhost:8080/events
+
+### get event
+GET http://localhost:8080/events/2
+
+### list spots
+GET http://localhost:8080/events/2/spots
+
+### reserve spot
+POST http://localhost:8080/events/1/reserve
+Content-Type: application/json
+
+{
+    "spots": ["A2"]
+}
